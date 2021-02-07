@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beacon</title>
+    <link href='styles.css' rel='stylesheet'>
+</head>
+<body>
+    <button class = 'saveButton'> Past Journals</button>
+	<p id="date"></p>
+	<div id="moodQuestions">
+		<h1>How are you feeling today? </h1>
+		<br>
+		<div id='moods'>
+			<input type="radio" id='happyButton' name="mood" value="Happy"> Happy </input>
+			<br><br />
+			<input type="radio" id='sadButton' name="mood" value="Sad"> Sad </input>
+			<br><br />
+			<input type="radio" id='stressedButton' name="mood" value="Stressed"> Stressed </input>
+			<br><br />
+			<input type="radio" id='angryButton' name="mood" value="Angry"> Angry </input>
+			<br><br />
+			<input type="radio" id='creativeButton' name="mood" value="Creative"> Creative </input>
+			<br><br />
+			<input type="radio" id='anxiousButton' name="mood" value="Anxious"> Anxious </input>
+		</div>
+		<br>
+		<div><h2>Elaborate! What do you think impacted your mood today?</h2></div>
+		<textarea id="elaborateText" rows="10" cols="50"></textarea>
+		<br>
+		<input class='button' type="button" value="Home" onclick="window.location.href='index.html'"/>
+		<input class='button' type="submit" value="Next" onclick="submitMood()"/>
+	</div>
+    <div id="activityQuestions" style="display: none">
+		<h1>What do you want to do today?</h1>
+		<br>
+		<div id='activities'>
+			<input type="radio" id='musicTheory' name="activity" value="Music Theory"> Music Theory </input>
+			<br><br />
+			<input type="radio" id='coding' name="activity" value="Coding"> Coding </input>
+			<br><br />
+			<input type="radio" id='drawing' name="activity" value="Drawing"> Drawing </input>
+			<br><br />
+			<input type="radio" id='meditate' name="activity" value="Meditate"> Meditate </input>
+			<br><br />
+			<input type="radio" id='gaming' name="activity" value="Gaming"> Gaming </input>
+			<br><br />
+			<input type="radio" id='dance' name="activity" value="Dance"> Dance </input>
+            <br><br />
+			<input type="radio" id='Journaling' name="activity" value="Journaling"> Journaling </input>
+            <br><br />
+			<input type="radio" id='lsnToMusic' name="activity" value="Listen to music"> Listen to music </input>
+            <br><br />
+			<input type="radio" id='learnLanguage' name="activity" value="Learn a new Language"> Learn a new language </input>
+            <br><br />
+			<input type="radio" id='magic' name="activity" value="Magic trick"> Magic trick </input>
+		</div>
+		<input class='button' type="button" value="Back" onclick="backToMoodPage()"/>
+		<input class='button' type="submit" value="Submit" onclick="submitActivity()"/>
+	</div>
+	<div id="results" style="display: none">
+		<h1>Results:</h1>
+		<br>
+		<h3 id="moodResult"></h3>
+		<h3 id="elaborateResult"></h3>
+		<h3 id="activityResult"></h3>
+        <h3>Video Link:</h3>
+        
+        <a id = "videoMedia" target = "_blank" href="">Youtube Link</a>
+		
+
+		<br>
+		<h3>Reflect -- <br> We want you to think about this for the rest of the day, wherever you are: <br> How did the video impact your mood?</h3>
+		<textarea id="reflectText" rows="10" cols="50"></textarea>
+		<br>
+		<input class='button' type="button" value="Start Over" onclick="resetPage()"/>
+		<input class='button' type="button" value="Finish" onclick="backToHome()"/>
+	</div>
+</body>
+<script src = "script.js"></script>
+</html>

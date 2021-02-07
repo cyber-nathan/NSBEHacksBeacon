@@ -1,0 +1,60 @@
+*,* ::before, *::after {
+    box-sizing: border-box ;
+    font-family: "nunito", "Courier New", monospace;
+    font-weight:  normal;
+}
+
+.frontPage {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-image: url('peaceful-background-1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 1280px 615px;
+    background-color: #f5d2c5;
+}
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-size: 1280px 615px;
+    background-color: #f5d2c5;
+}
+
+
+
+input[type="radio"] {
+    cursor: pointer;
+    font-size: 20px;
+    background: rgba(255,255,255,.75);
+}
+
+.homePage {
+    background-color:#f5d2c5;
+    cursor: pointer;
+    border:solid 4px #000000;
+    border-radius: 10px;
+    margin: 35px;
+    width: 20em; height: 5em;
+    
+}
+
+.button {
+    cursor: pointer;
+    background-color: darksalmon;
+    border: 1px solid black;
+    margin-top: 50px;
+	padding: 20px;
+}
+
+.saveButton {
+    cursor: pointer;
+    background-color: darksalmon;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+
